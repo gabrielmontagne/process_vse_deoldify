@@ -1,3 +1,8 @@
 = process_vse_deoldify
 Gabriel Montagné Láscaris-Comneno <gabriel@tibas.london>
 v0.0.1
+
+We use the conda deoldify environment, as per https://github.com/jantic/DeOldify, with a local editablle install.
+Also, we use https://github.com/gabrielmontagne/xyy and its dependencies.
+
+Run this from within the DeOldify folder to have relative access to the downloaded models.
