@@ -16,7 +16,10 @@ def initialize():
 
     @process_frame
     def deoldify_pixels(pixs, config):
-        return colorizer.get_transformed_image(path=config.get('image_path'))
+        return colorizer.get_transformed_image(
+            path=config.get('image_path'),
+            render_factor=int(config.get('xyy_render_factor', 35))
+        )
 
 def main():
     initialize()

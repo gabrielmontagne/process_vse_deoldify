@@ -6,3 +6,5 @@ We use the conda deoldify environment, as per https://github.com/jantic/DeOldify
 Also, we use https://github.com/gabrielmontagne/xyy and its dependencies.
 
 Run this from within the DeOldify folder to have relative access to the downloaded models.
+
+Note: The server will use the `xyy_render_factor` custom property fcurve on the scene if present.  The minimum is 1 and the maximum is 45.
