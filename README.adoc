@@ -2,6 +2,12 @@
 Gabriel Montagné Láscaris-Comneno <gabriel@tibas.london>
 v0.0.1
 
+Links Jason Antic's https://github.com/jantic/DeOldify with our 
+https://github.com/gabrielmontagne/blender-addon-process-vse-strip.
+
+
+image::feh_008408_000001_xxy_f-00055-a.png[Example]
+
 We use the conda deoldify environment, as per https://github.com/jantic/DeOldify, with a local editablle install.
 Also, we use https://github.com/gabrielmontagne/xyy and its dependencies.
 
