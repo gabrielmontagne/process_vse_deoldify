@@ -2,9 +2,8 @@
 Gabriel Montagné Láscaris-Comneno <gabriel@tibas.london>
 v0.0.1
 
-Links Jason Antic's https://github.com/jantic/DeOldify with our 
+Links Jason Antic's https://github.com/jantic/DeOldify with our
 https://github.com/gabrielmontagne/blender-addon-process-vse-strip.
-
 
 image::feh_008408_000001_xxy_f-00055-a.png[Example]
 
@@ -13,4 +12,23 @@ Also, we use https://github.com/gabrielmontagne/xyy and its dependencies.
 
 Run this from within the DeOldify folder to have relative access to the downloaded models.
 
-Note: The server will use the `xyy_render_factor` custom property fcurve on the scene if present.  The minimum is 1 and the maximum is 45.
+Note: The server will use the `xyy_render_factor` custom property fcurve on the scene if present.  The minimum is 1 and the maximum is 45.   The default is 35.
+
+== To install:
+
+=== Clone jantic's DeOldify repo.
+
+Use follow his instructions to create a conda environment.
+
+Download the generator and critic pretrained weights from his links and save them in a `models` folder 
+
+Note, it seems that the environment in the DeOldify repo is a bit too leninent, I had to downgrade Pillow to 6.1 (even force it a bit) for this to work on my setup.
+https://github.com/python-pillow/Pillow/issues/4130
+Install, `python setup.py develop`
+
+On that environment, install review the dependencies for xyy (as some might conflict with DeOldify) and then install it (perhaps as editable)
+Install, `python setup.py develop`
+
+On that environment, install this module, which will create the command line program `process_vse_deoldify`.
+
+You can run this from _DeOldify's own folder_ so that the downloaded files cna be used.
